@@ -1,5 +1,5 @@
 #body {
-  background-image: url(siteBackground.jpg);
+  background-image: siteBackground.jpg;
   background-repeat: repeat;
   background-position: center;
 }
