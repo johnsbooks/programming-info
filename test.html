@@ -1,0 +1,300 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  border: none;
+  width: 100%;
+  background-color: #bbb;
+  text-align: left;
+}
+
+button:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><button onMouseOver="showHtml()" id="b1">HTML</button></li>
+      <li><button onMouseOver="showCss()" id="b2">CSS</button></li>
+      <li><button onMouseOver="showJs()" id="b3">JavaScript</button></li>
+      <li><button onMouseOver="showPhp()" id="b4">PHP</button></li>
+      <li><button onMouseOver="showPython()" id="b5">Python</button></li>
+      <li><button onMouseOver="showJQ()" id="b6">jQuery</button></li>
+      <li><button onMouseOver="showSql()" id="b7">SQL</button></li>
+      <li><button onMouseOver="showBootstrap()" id="b8">Bootstrap</button></li>
+      <li><button onMouseOver="showNodeJs()" id="b9">Node.js</button></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <div id="HTML" style="display: none">
+		<h2> HTML </h2>
+		<p>
+		Hypertext Markup Language, a standardized system <br>
+		for tagging text files to achieve font, color, <br>
+		graphic, and hyperlink effects on World Wide Web pages.
+		</p>
+	</div>
+	<div id="CSS" style="display: none">
+		<h2> CSS </h2>
+		<p>
+		CSS is a language for describing the look and <br>
+		formatting of content. Usually this content is in <br>
+		the form of HTML however it is possible to be in <br>
+		other formats as well. CSS is organised as a set <br>
+		of rules that define how different parts of the <br>
+		content should be presented.
+		</p>
+	</div>
+	<div id="JS" style="display: none">
+		<h2> JavaScript </h2>
+		<p>
+		JavaScript, often abbreviated as JS, is a programming <br>
+		language that conforms to the ECMAScript specification. <br>
+		JavaScript is high-level, often just-in-time compiled, <br>
+		and multi-paradigm. It has curly-bracket syntax, dynamic <br>
+		typing, prototype-based object-orientation, and first-class<br>
+		functions.
+		</p>
+	</div>
+	<div id="PHP" style="display: none">
+		<h2> PHP </h2>
+		<p>
+		PHP is a server side scripting language. that is used to <br>
+		develop Static websites or Dynamic websites or Web applications. <br>
+		PHP stands for Hypertext Pre-processor, that earlier stood for <br>
+		Personal Home Pages.
+		</p>
+	</div>
+	<div id="Python" style="display: none">
+		<h2> Python </h2>
+		<p>
+		Python is an interpreted, high-level, general-purpose programming <br>
+		language. Created by Guido van Rossum and first released in 1991, <br>
+		Python's design philosophy emphasizes code readability with its notable <br>
+		use of significant whitespace. Its language constructs and object-oriented <br>
+		approach aim to help programmers write clear, logical code for small and <br>
+		large-scale projects.
+		</p>
+	</div>
+	<div id="jQuery" style="display: none">
+		<h2> jQuery </h2>
+		<p>
+		jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and <br>
+		manipulation, as well as event handling, CSS animation, and Ajax. It is free, <br>
+		open-source software using the permissive MIT License. As of May 2019, jQuery is<br>
+		used by 73% of the 10 million most popular websites. Web analysis indicates that <br>
+		it is the most widely deployed JavaScript library by a large margin, having 3 to <br>
+		4 times more usage than any other JavaScript library.
+		</p>
+	</div>
+	<div id="SQL" style="display: none">
+		<h2> SQL </h2>
+		<p>
+		SQL is a domain-specific language used in programming and <br>
+		designed for managing data held in a relational database <br>
+		management system, or for stream processing in a relational <br>
+		data stream management system. It is particularly useful in <br>
+		handling structured data, i.e. data incorporating relations <br>
+		among entities and variables.
+		</p>
+	</div>
+	<div id="BS" style="display: none">
+		<h2> Bootstrap </h2>
+		<p>
+		Bootstrap is a free and open-source CSS framework directed <br>
+		at responsive, mobile-first front-end web development. It <br>
+		contains CSS- and JavaScript-based design templates for <br>
+		typography, forms, buttons, navigation, and other interface<br>
+		components.
+		</p>
+	</div>
+	<div id="NodeJS" style="display: none">
+		<h2> Node.js </h2>
+		<p>
+		Node.js (Node) is an open source development platform for executing <br>
+		JavaScript code server-side. Node is useful for developing applications <br>
+		that require a persistent connection from the browser to the server and <br>
+		is often used for real-time applications such as chat, news feeds and web <br>
+		push notifications.
+		</p>
+	</div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, button, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("button")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+};
+function showHtml() {
+	document.getElementById('HTML').style.display = "";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showCss() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showJs() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showPhp() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showPython() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showJQ() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showSql() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showBootstrap() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "";
+	document.getElementById('NodeJS').style.display = "none";
+};
+function showNodeJs() {
+	document.getElementById('HTML').style.display = "none";
+	document.getElementById('CSS').style.display = "none";
+	document.getElementById('JS').style.display = "none";
+	document.getElementById('PHP').style.display = "none";
+	document.getElementById('Python').style.display = "none";
+	document.getElementById('jQuery').style.display = "none";
+	document.getElementById('SQL').style.display = "none";
+	document.getElementById('BS').style.display = "none";
+	document.getElementById('NodeJS').style.display = "";
+};
+</script>
+
+</body>
+</html>
