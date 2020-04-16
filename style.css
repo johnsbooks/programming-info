@@ -4,10 +4,10 @@
   background-position: center;
 }
 #header {
+  background-image: headerBackground.jpg;
   padding: 10px;
   margin-top: 100px;
   text-align: center;
-  background-image: headerBackground.jpg;
 }
 #title {
   color: #ffffff;
