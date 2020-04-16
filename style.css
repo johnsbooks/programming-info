@@ -1,7 +1,6 @@
 #body {
   background-image: siteBackground.jpg;
-  background-repeat: repeat;
-  background-position: center;
+  background-repeat: no-repeat;
 }
 #header {
   background-image: headerBackground.jpg;
