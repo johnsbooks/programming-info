@@ -1,0 +1,151 @@
+body {
+	background-image: url("Files/siteBackground.jpg");
+	color: #ffffff;
+}
+.headingAndPages {
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	background-image: url("Files/headerBackground.jpg");
+}
+.h1 {
+	font-family: Berlin Sans FB;
+	text-align: center;
+}
+.home {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Product Sans Light;
+	border: none;
+}
+.home:hover {
+	background-color: #999999;
+	color: #000000;
+}
+.myBooks {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #00aaff;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Product Sans Light;
+	border: none;
+}
+.myBooks:hover {
+	background-color: #0088ff;
+	color: #000000;
+}
+.contactMe {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Product Sans Light;
+	border: none;
+}
+.contactMe:hover {
+	background-color: #999999;
+	color: #000000
+}
+.help {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Product Sans Light;
+	border: none;
+}
+.help:hover {
+	background-color: #999999;
+	color: #000000
+}
+.buttonsAndStuff {
+	margin-left: 50px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.body {
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 100px;
+}
+.searchbar {
+	text-align: center;
+	margin-top: 50px;
+}
+#mySearch {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 1px;
+	border-color: #cccccc;
+	width: 500px;
+	text-align: left;
+	font-family: Product Sans Light;
+	font-size: 24px;
+}
+#myMenu {
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+	list-style-type: none;
+}
+#bookHead1 {
+	font-family: Berlin Sans FB;
+	text-align: center-left;
+	font-size: 24px;
+	color: #ffffff;
+}
+#bookDesc1 {
+	font-family: Product Sans Light;
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+}
+#bookHead2 {
+	font-family: Berlin Sans FB;
+	text-align: center-left;
+	font-size: 24px;
+	color: #ffffff;
+}
+#bookDesc2 {
+	font-family: Product Sans Light;
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+}
+#bookHead3 {
+	font-family: Berlin Sans FB;
+	text-align: center-left;
+	font-size: 24px;
+	color: #ffffff;
+}
+#bookDesc3 {
+	font-family: Product Sans Light;
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+}
+.logo {
+	text-align: center;
+}

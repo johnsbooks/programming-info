@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Books | John's Books</title>
+	<link rel="stylesheet" href="myBooks.css">
+</head>
+<body>
+	<div class="headingAndPages">
+		<div class="logo">
+			<img src="Files/bookLogo.jpg" width="500px"/>
+		</div>
+		<div class="heading">
+			<h1 class="h1">  Books  </h1>
+		</div>
+		<hr>
+		<div class="pageList">
+			<p class="buttonsAndStuff">
+			<button class="home" onClick="document.location = 'home.html'">Home</button>
+			<button class="myBooks" onClick="document.location = 'myBooks.html'">My Books</button>
+			<button class="contactMe" onClick="document.location = 'contactMe.html'">Submit A Book</button>
+			<button class="help" onClick="document.location = 'help.html'">Help</button>
+			</p>
+		</div>
+		<hr>
+	</div>
+	
+	<div class="body">
+	<div class="searchbar">
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Type Book Title or Series" title="Search">
+	</div>
+	<ul id="myMenu">
+		<li>
+			<a id="bookHead1" href="Files/Previews/The%20Battles%20of%20Ekhelyra_%20Remember%20Me%20Preview.pdf" target="_blank">
+				The Battles of Ekhelyra Series: Remember Me
+			</a>
+			<p id="bookDesc1">
+				Back in the year 1507, the Kingdom of Ekhelyra
+				was ruled by King Yumi Shinobu -- a super homophobic
+				king who will burn any gay person a the stake -- and
+				his wife: Queen Mariah Shinobu. His 6 year old son,
+				Naiomi, has gotten pretty used to royal life. He likes
+				being able to ask for anything and get it. He is freely
+				allowed to explore the kingdom, as it is not that big 
+				and it's hard to get lost. Naiomi has a twin sister named
+				Isabel. While everyone in the kingdom knows Naiomi, almost
+				no one knows who she is. She doesn't care. She sees all of 
+				the newspaper people interviewing Naiomi and realizes
+				that she doesn't want anything to do with that.
+			</p>
+		</li>	
+		<li>
+			<a id="bookHead2" href="" target="_blank">
+				The Battles of Ekhelyra Series: The Answer
+			</a>
+			<p id="bookDesc2">
+				Naiomi and Kaiar are in the midst of running the the 
+				kingdom of Ekhelyra after Yumi had passed on, but it's 
+				not as easy as it looks. They also have to plan a wedding 
+				and keep the Committee from re-instating the Anti-Gay law '
+				that they worked to hard to get rid of.
+			</p>
+		</li>
+		<li>
+			<a id="bookHead3" href="https://my.w.tt/goYOiETq14" target="_blank">
+				Silence (Tododeku) {Season 1}
+			</a>
+			<p id="bookDesc3">
+				Join Todoroki as he meets Midoriya and instantly falls in
+				love. He doesn't know it yet but his love for Deku will go 
+				far beyond a crush. The end of this story will rip your heart 
+				out I swear.
+			</p>
+		</li>
+	</ul>
+	</div>
+	<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+	</script>
+</body>
+</html>
